@@ -29,9 +29,9 @@ const saveNotes = (notes, newNote) =>
             });
           };
 app.get('/api/notes', (req, res) => {
-    grabDbNoteInfo('/api/notes').then((data) => res.json(JSON.parse(data)))
+    grabDbNoteInfo('./db/db.json').then((data) => res.json(JSON.parse(data)))
 });
-
+app.get('/') //serve up html root route /notes
 app.post('/api/notes', (req, res) => {
     const {title, text} = req.body;
 
@@ -44,7 +44,7 @@ app.post('/api/notes', (req, res) => {
 
         const response = {
             status: "success",
-            body: notes,
+            body: newNotes,
         }
     console.log(response);
     res.json(response)
