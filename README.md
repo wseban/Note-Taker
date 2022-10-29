@@ -1,6 +1,7 @@
 # Note Taker
 
 ## Deployed Links:
+https://note-taker-seban.herokuapp.com/
 
 ## Usage
 Using the command line the user should run node server.js to initiate the PORT listen.  after activating the app listening, the user should head over to http://localhost:3001 where they will be presented with the landing page.  From the landing page the user should click on the button "Get Started" where they will be rerouted to the notes page.  They are encouraged to write a title and any note they feel is important and then click the save button in the upper right corner.  If they desire to come back to the note they have written at any time, all they need to do is click on the note that they desire to see.

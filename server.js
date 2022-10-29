@@ -6,7 +6,7 @@ const uuid = require('./helpers/uuid');
 const notes = require('./db/db.json');
 const app = express();
 // require all needed necessary node based programs are connections
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.static('public'));
 //allow path to be built relative within the public folder
