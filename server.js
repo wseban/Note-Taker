@@ -60,7 +60,6 @@ app.post('/api/notes', (req, res) => {
       status: "success",
       body: newNotes,
     }
-    console.log(response);
     res.json(response)
   } else {
     res.json('Error in posting review');
